@@ -1,0 +1,103 @@
+.design {
+
+    &__wrapper {
+    @include tablet{
+        
+    }
+    }
+
+    &__title {
+        margin-bottom: 10px;
+        color: var(--text-color, #252B42);
+        text-align: center;
+/* h2 */
+font-family: Montserrat;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: 57px; /* 142.5% */
+letter-spacing: 0.2px;
+@include tablet{
+    font-size: 30px;
+}
+    }
+
+    &__desc {
+        max-width: 511px;
+        margin: 0 auto;
+        color: var(--second-text-color, #737373);
+        text-align: center;
+        
+        /* paragraph */
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px; /* 142.857% */
+        letter-spacing: 0.2px;
+        margin-bottom: 30px;
+    }
+
+    &__items {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+    
+        @include tablet{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        @include mobile{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+    }
+
+
+    &__point {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        
+    }
+
+    &__svg {
+    height: 50px;
+    margin-bottom: 20px;
+    }
+
+
+    &__numebers {
+        
+        color: var(--text-color, #252B42);
+
+/* h2 */
+font-family: Montserrat;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: 57px; /* 142.5% */
+letter-spacing: 0.2px;
+@include tablet-small{
+    font-size: 32px;
+}
+    }
+
+    &__text {
+        color: var(--second-text-color, #737373);
+text-align: center;
+
+/* h5 */
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 150% */
+letter-spacing: 0.1px;
+    }
+}
+.container {
+}
